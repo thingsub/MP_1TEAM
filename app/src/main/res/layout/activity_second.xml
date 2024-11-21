@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.fpicture.SecondActivity">
+
+    <!-- Include the common layout -->
+    <include layout="@layout/common_layout" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:text="2. 이것은 무엇일까요?"
+        android:textStyle="bold"
+        android:textSize="20dp"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <ImageView
+        android:id="@+id/imageKjs"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/kjs" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <TextView
+        android:id="@+id/TextView"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginStart="100dp"
+        android:text=""
+        android:textSize="24sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+    <View
+        android:id="@+id/divider3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:columnCount="5"
+        android:rowCount="5"
+        android:padding="10dp"
+        android:layout_gravity="center">
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_columnSpan="1"
+            style="@style/GridButton"
+            android:textAppearance="@style/Textstyle"/>
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_columnSpan="1"
+            style="@style/GridButton"
+            android:textAppearance="@style/Textstyle"/>
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_columnSpan="1"
+            style="@style/GridButton"
+            android:textAppearance="@style/Textstyle"/>
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_columnSpan="1"
+            style="@style/GridButton"
+            android:textAppearance="@style/Textstyle"/>
+
+        <Button
+            android:id="@+id/buttonErase"
+            android:layout_columnSpan="1"
+            android:text="←"
+            style="@style/GridButton"
+            android:textAppearance="@style/Textstyle"
+            android:background="#FF0000"/>
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_columnSpan="1"
+            style="@style/GridButton"
+            android:textAppearance="@style/Textstyle"/>
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_columnSpan="1"
+            style="@style/GridButton"
+            android:textAppearance="@style/Textstyle"/>
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_columnSpan="1"
+            style="@style/GridButton"
+            android:textAppearance="@style/Textstyle"/>
+
+        <Button
+            android:id="@+id/button8"
+            android:layout_columnSpan="1"
+            style="@style/GridButton"
+            android:textAppearance="@style/Textstyle"/>
+
+        <Button
+            android:id="@+id/buttonEnter"
+            android:layout_columnSpan="1"
+            android:layout_rowSpan="2"
+            android:text="Enter"
+            android:textSize="15dp"
+            style="@style/GridButton"
+            android:textAppearance="@style/Textstyle"/>
+
+        <Button
+            android:id="@+id/button9"
+            android:layout_columnSpan="1"
+            style="@style/GridButton"
+            android:textAppearance="@style/Textstyle"/>
+
+        <Button
+            android:id="@+id/button10"
+            android:layout_columnSpan="1"
+            style="@style/GridButton"
+            android:textAppearance="@style/Textstyle"/>
+
+        <Button
+            android:id="@+id/button11"
+            android:layout_columnSpan="1"
+            style="@style/GridButton"
+            android:textAppearance="@style/Textstyle"/>
+
+        <Button
+            android:id="@+id/button12"
+            android:layout_columnSpan="1"
+            style="@style/GridButton"
+            android:textAppearance="@style/Textstyle"/>
+
+        <Button
+            android:id="@+id/buttonHint"
+            android:layout_columnSpan="3"
+            android:text="Hint (1회 제공)"
+            android:background="#008000"
+            style="@style/GridButton"
+            android:textAppearance="@style/Textstyle"/>
+
+        <Button
+            android:id="@+id/buttonPass"
+            android:layout_columnSpan="2"
+            android:text="Pass"
+            style="@style/GridButton"
+            android:background="#FF0000"
+            android:textAppearance="@style/Textstyle"/>
+
+        <Button
+            android:id="@+id/buttonGohome"
+            style="@style/GridButton"
+            android:text="Home으로 돌아가기"
+            android:layout_height="45dp"
+            android:layout_columnSpan="5"
+            android:background="#999999"
+            android:textAppearance="@style/Textstyle" />
+
+    </GridLayout>
+
+</LinearLayout>
